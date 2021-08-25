@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from twilio.rest import Client
-account_sid = 'AC106e47c71964da787ffb98dc59371b2a' 
-auth_token = 'edb51cdddc2b41b52f81fcb1f0454f27'
+account_sid = 's_id here' 
+auth_token = 'auth_token here'
 
 
 # In[32]:
@@ -15,22 +9,15 @@ auth_token = 'edb51cdddc2b41b52f81fcb1f0454f27'
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-                              from_='whatsapp:+14155238886', 
+                              from_='whatsapp:twilio sandvine number here', 
+                              //Whatsapp alert message containing picture of students improperly wearing masks and not weaaring masks
                               body='Mask Up App Alert!!! \n Student is entering without a face mask. \n See in camera to recognize student. \n Please advise to Mask Up!!',
-                              media_url = 'http://6f470b37db77.ngrok.io/tmp/nomask1.jpeg',
+                              media_url = 'http://6f470b37db77.ngrok.io/.jpeg',
                          
-                              to='whatsapp:+263784323479'
+                              to='whatsapp:put your phone number here'
                               )
                               
 
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
