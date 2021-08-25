@@ -164,40 +164,9 @@ while True:
 			cursor.close() # close the cursor
 			conn.close() # close connection
 			
-			# #SEND SMS TO ALERT ADMIN THAT A STUDENT IS TRYING TO ENTER WITHOUT WEARING A FACE MASK OR IMPROPERLY WEARING A FACE MASK, INCASE WIFI IS DOWN OR ADMIN HAS NO DATA TO RECEIVE 
-			# #ALERTS IN WHATSAPP.
-			# from twilio.rest import Client
-			# file = 'C:\xampp\htdocs\tmp'+t+'.jpg'
-			# cv2.imwrite(file,frame)
-			# with open('C:\xampp\htdocs\tmp'+t+'.jpg', 'rb') as f:
-			# 				img = f.read()
-			# account_sid = 'AC106e47c71964da787ffb98dc59371b2a'
-			# auth_token = 'edb51cdddc2b41b52f81fcb1f0454f27'
-			# client = Client(account_sid, auth_token)
-			# message = client.messages.create(
-			# 	                          from_='whatsapp:+14155238886', 
-			# 							  body='Mask Up App Alert!!! \n Student is entering without a face mask. \n See in camera to recognize student. \n Please advise to Mask Up!!',
-			# 							  media_url = 
-			# 						      to='whatsapp:+263784323479'
-			#                               )
-                         
-	
-			
-			#FROM THE SMS ADMIN CAN CHECK THE SYSTEM DATABASE TO RECOGNIZE STUDENT
-
-			# from twilio.rest import Client
-			# account_sid = 'AC106e47c71964da787ffb98dc59371b2a' 
-			# auth_token = 'edb51cdddc2b41b52f81fcb1f0454f27'
-			# client = Client(account_sid, auth_token)
-	        # message = client.messages.create(
-			# 	                          messaging_service_sid='MG929f48746926df172c81ca05d09542a3', 
-			# 							  body='Mask Up App Alert!!! Student is entering without a face mask. See in camera to recognize student. Please advise to Mask Up!!',      
-            #                               to='+263784323479' 
-			#                            )
 			
 				
-        
-				
+   		
 
 	# show the output frame
 	cv2.imshow("Mask Up App", frame)
